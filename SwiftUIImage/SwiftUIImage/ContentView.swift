@@ -31,6 +31,7 @@ struct ContentView: View {
             .rotation3DEffect(
                 .degrees(60),
                 axis: (x: 1, y: 0.0, z: 0.0))
+            .shadow(color: .gray, radius: 6, x: 0, y: 7)
 
     }
 }
