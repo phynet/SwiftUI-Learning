@@ -25,6 +25,12 @@ struct ContentView: View {
             .truncationMode(.head)
             .lineSpacing(10)
             .padding()
+        //rotate the text 2D
+            //.rotationEffect(.degrees(10), anchor: UnitPoint(x: 0, y: 0))
+            //Star Wars effect
+            .rotation3DEffect(
+                .degrees(60),
+                axis: (x: 1, y: 0.0, z: 0.0))
 
     }
 }
