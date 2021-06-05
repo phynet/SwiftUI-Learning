@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma—which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition.")
             .fontWeight(.bold)
-            .font(.custom("Helvetica Neue", size: 25))
+            .font(.title)
+            .foregroundColor(.gray)
+            //Center the text
+            .multilineTextAlignment(.center)
+            //limit the number of lines
+            //.lineLimit(10)
+            /*
+             Earlier, I mentioned that the Text control displays multiple lines by default. The reason is that the SwiftUI framework has set a default value of nil for the lineLimit modifier. You can change the value of .lineLimit to nil and see the result:
+             */
+                .lineLimit(nil)
+            //truncate mode
+            .truncationMode(.head)
+            .lineSpacing(10)
             .padding()
-        Text("Hello, second world!")
-            .fontWeight(.bold)
-            .font(.system(.title, design: .rounded))
 
     }
 }
