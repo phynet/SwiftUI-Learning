@@ -11,10 +11,10 @@ struct ContentView: View {
     var body: some View {
         Image("paris")
             .resizable()
-            .edgesIgnoringSafeArea(.all)
+            //.edgesIgnoringSafeArea(.all)
             //.scaledToFit()
             .aspectRatio(contentMode: .fit)
-//            .frame(width: 300)
+            .frame(width: 300)
             .clipped()
 //            .clipShape(Circle())
 //            //.clipShape(Ellipse())
@@ -25,18 +25,27 @@ struct ContentView: View {
 //                .font(.system(size: 50))
 //                .foregroundColor(.black)
 //                .opacity(0.5)
-                Text("If you are lucky enough to have lived in Paris as a young man, then wherever you go for the rest of your life it stays with you, for Paris is a moveable feast.\n\n- Ernest Hemingway")
-                           .fontWeight(.heavy)
-                           .font(.system(.headline, design: .rounded))
-                           .foregroundColor(.white)
-                           .padding()
-                           .background(Color.black)
-                           .cornerRadius(20)
-                           .opacity(0.8)
-                           .padding(),
-
-                       alignment: .top
-
+//                Text("If you are lucky enough to have lived in Paris as a young man, then wherever you go for the rest of your life it stays with you, for Paris is a moveable feast.\n\n- Ernest Hemingway")
+//                           .fontWeight(.heavy)
+//                           .font(.system(.headline, design: .rounded))
+//                           .foregroundColor(.white)
+//                           .padding()
+//                           .background(Color.black)
+//                           .cornerRadius(20)
+//                           .opacity(0.8)
+//                           .padding(),
+//
+//                alignment: .top
+                Rectangle()
+                    .foregroundColor(.black)
+                    .opacity(0.4)
+                    .overlay(
+                        Text("Paris")
+                            .font(.largeTitle)
+                            .fontWeight(.black)
+                            .foregroundColor(.white)
+                            .frame(width: 200)
+                    )
             )
     }
 }
