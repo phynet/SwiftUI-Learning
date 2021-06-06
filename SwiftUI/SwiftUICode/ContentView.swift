@@ -9,10 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image(systemName: "cloud.heavyrain")
-            .font(.system(size: 100))
-            .foregroundColor(.blue)
-            .shadow(color: .gray, radius: 10, x: 0, y: 10)
+        Image("paris")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            //.scaledToFit()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 300)
+            //.clipped()
+            .clipShape(Circle())
     }
 }
 
