@@ -11,23 +11,32 @@ struct StackContentView: View {
     var body: some View {
         VStack {
             HeaderView()
-            VStack {
-                Text("Basic")
-                    .font(.system(.largeTitle, design:.rounded))
-                    .fontWeight(.black)
-                    .foregroundColor(.white)
-                Text("$9")
-                    .font(.system(size: 40,
-                                  weight: .heavy,
-                                  design: .rounded))
-                    .foregroundColor(.white)
-                Text("per month")
-                    .font(.headline)
-                    .foregroundColor(.white)
+            HStack {
+
+                PricingView(title: "Basic",
+                        price: "$9",
+                        textColor: .white,
+                        bgColor: .purple)
+/*The order of the views embedded in the ZStack determine how the views are overlaid with each other. For the code bellow, the Text view will overlay on top of the pricing view. In the canvas, you should see the pricing layout like this:
+
+                 */
+                ZStack {
+                PricingView(title: "Pro",
+                        price: "$19",
+                        textColor: .black,
+                        bgColor: Color(red: 240/255,
+                                       green: 240/255,
+                                       blue: 240/255))
+                    Text("Best for designer")
+                            .font(.system(.caption,
+                                          design: .rounded))
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(5)
+                            .background(Color(red: 255/255, green: 183/255, blue: 37/255))
+                }
             }
-            .padding(40)
-            .background(Color.purple)
-            .cornerRadius(10)
+            .padding(.horizontal)
         }
     }
 }
@@ -48,5 +57,34 @@ struct HeaderView: View {
                 .font(.system(.largeTitle, design:.rounded))
                 .fontWeight(.black)
         }
+    }
+}
+
+struct PricingView: View {
+    var title: String
+    var price: String
+    var textColor: Color
+    var bgColor: Color
+
+    var body: some View {
+
+            VStack {
+                Text(title)
+                    .font(.system(.largeTitle, design:.rounded))
+                    .fontWeight(.black)
+                    .foregroundColor(textColor)
+                Text(price)
+                    .font(.system(size: 40,
+                                  weight: .heavy,
+                                  design: .rounded))
+                    .foregroundColor(textColor)
+                Text("per month")
+                    .font(.headline)
+                    .foregroundColor(textColor)
+            }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
+            .padding(40)
+            .background(bgColor)
+            .cornerRadius(10)
     }
 }
