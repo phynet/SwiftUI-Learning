@@ -11,33 +11,51 @@ struct StackContentView: View {
     var body: some View {
         VStack {
             HeaderView()
-            HStack {
 
-                PricingView(title: "Basic",
-                        price: "$9",
-                        textColor: .white,
-                        bgColor: .purple)
-/*The order of the views embedded in the ZStack determine how the views are overlaid with each other. For the code bellow, the Text view will overlay on top of the pricing view. In the canvas, you should see the pricing layout like this:
+            HStack(spacing: 15) {
 
-                 */
+                PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple)
+/*The order of the views embedded in the ZStack determine how the views are overlaid with each other. For the code bellow, the Text view will overlay on top of the pricing view. In the canvas, you should see the pricing layout like this: */
+
+                //Pro
                 ZStack {
-                PricingView(title: "Pro",
-                        price: "$19",
-                        textColor: .black,
-                        bgColor: Color(red: 240/255,
-                                       green: 240/255,
-                                       blue: 240/255))
-                    Text("Best for designer")
-                            .font(.system(.caption,
-                                          design: .rounded))
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .padding(5)
-                            .background(Color(red: 255/255, green: 183/255, blue: 37/255))
+                PricingView(title: "Pro", price: "$19", textColor: .black, bgColor: Color(red: 240/255, green: 240/255, blue: 240/255))
+                    FooterView(offsetY: 87, text: "Best for designer")
+
                 }
             }
             .padding(.horizontal)
+
+            //team
+            ZStack {
+                PricingView(title: "Team",
+                        price: "$299",
+                        textColor: .white,
+                        bgColor: Color(red: 62/255, green: 63/255, blue: 70/255),
+                        icon: "wand.and.rays")
+                    .padding()
+                FooterView(offsetY: 87, text: "Perfect for teams with 20 members")
+            }
+
+            //Vertical
+            Spacer()
         }
+    }
+}
+
+struct FooterView: View {
+    var offsetY: Double
+    var text: String
+
+    var body: some View {
+        Text(text)
+                .font(.system(.caption,
+                              design: .rounded))
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .padding(5)
+                .background(Color(red: 255/255, green: 183/255, blue: 37/255))
+            .offset(x:0, y: CGFloat(offsetY))
     }
 }
 
@@ -49,14 +67,19 @@ struct StackContentView_Previews: PreviewProvider {
 
 struct HeaderView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text("Choose")
-                .font(.system(.largeTitle, design:.rounded))
-                .fontWeight(.black)
-            Text("Your Plan")
-                .font(.system(.largeTitle, design:.rounded))
-                .fontWeight(.black)
+        HStack {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Choose")
+                    .font(.system(.largeTitle, design: .rounded))
+                    .fontWeight(.black)
+                Text("Your Plan")
+                    .font(.system(.largeTitle, design: .rounded))
+                    .fontWeight(.black)
+            }
+
+            Spacer()
         }
+        .padding()
     }
 }
 
@@ -65,12 +88,18 @@ struct PricingView: View {
     var price: String
     var textColor: Color
     var bgColor: Color
+    var icon: String?
 
     var body: some View {
 
             VStack {
+                icon.map({
+                    Image(systemName: $0)
+                        .font(.largeTitle)
+                        .foregroundColor(textColor)
+                })
                 Text(title)
-                    .font(.system(.largeTitle, design:.rounded))
+                    .font(.system(.title, design:.rounded))
                     .fontWeight(.black)
                     .foregroundColor(textColor)
                 Text(price)
