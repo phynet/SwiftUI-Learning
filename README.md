@@ -1,7 +1,11 @@
 # SwiftUI-Learning
 AppCoda tutorial about SwiftUI, uploading all different changes I'm reading
 
-# Exercise 1
+# Final Exercise Chapter 1 & 2
+
+Branches: Images, Texts, Stacks
+
+Final progress: 
 
 Layout and stacks
 
