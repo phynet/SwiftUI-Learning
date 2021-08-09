@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1AC51D2676076F007704DB /* StackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1AC51C2676076F007704DB /* StackContentView.swift */; };
+		6F1AC80226AC9652007704DB /* StackContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1AC80126AC9651007704DB /* StackContentView2.swift */; };
 		6F5492E725D07F220001C86F /* SwiftUICodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5492E625D07F220001C86F /* SwiftUICodeApp.swift */; };
 		6F5492E925D07F220001C86F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5492E825D07F220001C86F /* ContentView.swift */; };
 		6F5492EB25D07F230001C86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5492EA25D07F230001C86F /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F1AC51C2676076F007704DB /* StackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView.swift; sourceTree = "<group>"; };
+		6F1AC80126AC9651007704DB /* StackContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView2.swift; sourceTree = "<group>"; };
 		6F5492E325D07F220001C86F /* SwiftUICode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5492E625D07F220001C86F /* SwiftUICodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICodeApp.swift; sourceTree = "<group>"; };
 		6F5492E825D07F220001C86F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				6F5492E625D07F220001C86F /* SwiftUICodeApp.swift */,
 				6F5492E825D07F220001C86F /* ContentView.swift */,
+				6F1AC51C2676076F007704DB /* StackContentView.swift */,
+				6F1AC80126AC9651007704DB /* StackContentView2.swift */,
 				6F5492EA25D07F230001C86F /* Assets.xcassets */,
 				6F5492EF25D07F230001C86F /* Info.plist */,
 				6F5492EC25D07F230001C86F /* Preview Content */,
@@ -187,6 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1AC80226AC9652007704DB /* StackContentView2.swift in Sources */,
+				6F1AC51D2676076F007704DB /* StackContentView.swift in Sources */,
 				6F5492E925D07F220001C86F /* ContentView.swift in Sources */,
 				6F5492E725D07F220001C86F /* SwiftUICodeApp.swift in Sources */,
 			);
