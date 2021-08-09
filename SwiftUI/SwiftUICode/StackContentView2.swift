@@ -13,13 +13,13 @@ struct StackContentView2: View {
 
             VStack(spacing: 15) {
                 ZStack {
-                    PriceView(title: "Basic", price: "$9", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255), icon: "burst")
+                    PriceView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple , icon: "burst")
                         .padding()
                         .offset(x: 0, y: 180)
-                    PriceView(title: "Pro", price: "$19", textColor: .white, bgColor: .purple, icon: "wand.and.rays")
+                    PriceView(title: "Pro", price: "$19", textColor: .white, bgColor: Color(red: 255/255, green: 183/255, blue: 37/255), icon: "wand.and.rays")
                         .padding()
                         .scaleEffect(0.95)
-                    PriceView(title: "Team", price: "$299", textColor: .white, bgColor: .blue, icon: "dial")
+                    PriceView(title: "Team", price: "$299", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255), icon: "dial")
                         .padding()
                         .scaleEffect(0.9)
                         .offset(x: 0, y: -180)
