@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUICodeApp: App {
     var body: some Scene {
         WindowGroup {
-            StackContentView()
+            ContentScrollView()
         }
     }
 }
