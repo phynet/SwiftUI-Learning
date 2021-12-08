@@ -11,7 +11,13 @@ import SwiftUI
 struct SwiftUICodeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentScrollView()
+            GridLayout()
         }
+    }
+}
+
+struct SwiftUICodeApp_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Hello, World!")
     }
 }
