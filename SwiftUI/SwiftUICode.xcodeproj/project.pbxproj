@@ -11,45 +11,31 @@
 		6F1AC80226AC9652007704DB /* StackContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1AC80126AC9651007704DB /* StackContentView2.swift */; };
 		6F1AC80926C13902007704DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1AC80826C13902007704DB /* CardView.swift */; };
 		6F1AC92226C88089007704DB /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1AC92126C88089007704DB /* ScrollView.swift */; };
+		6F1AD12826D03A7E007704DB /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1AD12726D03A7E007704DB /* Buttons.swift */; };
 		6F5492E725D07F220001C86F /* SwiftUICodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5492E625D07F220001C86F /* SwiftUICodeApp.swift */; };
 		6F5492E925D07F220001C86F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5492E825D07F220001C86F /* ContentView.swift */; };
 		6F5492EB25D07F230001C86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5492EA25D07F230001C86F /* Assets.xcassets */; };
 		6F5492EE25D07F230001C86F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5492ED25D07F230001C86F /* Preview Assets.xcassets */; };
+		6FA4C3D7273ABE6600398392 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA4C3D6273ABE6600398392 /* GridLayout.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6F5492F525D07F230001C86F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6F5492DB25D07F220001C86F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F5492E225D07F220001C86F;
-			remoteInfo = SwiftUIImage;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6F1AC51C2676076F007704DB /* StackContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView.swift; sourceTree = "<group>"; };
 		6F1AC80126AC9651007704DB /* StackContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContentView2.swift; sourceTree = "<group>"; };
 		6F1AC80826C13902007704DB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		6F1AC92126C88089007704DB /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		6F1AD12726D03A7E007704DB /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		6F5492E325D07F220001C86F /* SwiftUICode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5492E625D07F220001C86F /* SwiftUICodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICodeApp.swift; sourceTree = "<group>"; };
 		6F5492E825D07F220001C86F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F5492EA25D07F230001C86F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F5492ED25D07F230001C86F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F5492EF25D07F230001C86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F5492F425D07F230001C86F /* SwiftUICodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA4C3D6273ABE6600398392 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6F5492E025D07F220001C86F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F5492F125D07F230001C86F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				6F5492E325D07F220001C86F /* SwiftUICode.app */,
-				6F5492F425D07F230001C86F /* SwiftUICodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +70,8 @@
 				6F1AC80126AC9651007704DB /* StackContentView2.swift */,
 				6F1AC80826C13902007704DB /* CardView.swift */,
 				6F1AC92126C88089007704DB /* ScrollView.swift */,
+				6F1AD12726D03A7E007704DB /* Buttons.swift */,
+				6FA4C3D6273ABE6600398392 /* GridLayout.swift */,
 				6F5492EA25D07F230001C86F /* Assets.xcassets */,
 				6F5492EF25D07F230001C86F /* Info.plist */,
 				6F5492EC25D07F230001C86F /* Preview Content */,
@@ -120,24 +107,6 @@
 			productReference = 6F5492E325D07F220001C86F /* SwiftUICode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6F5492F325D07F230001C86F /* SwiftUICodeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6F54930B25D07F230001C86F /* Build configuration list for PBXNativeTarget "SwiftUICodeTests" */;
-			buildPhases = (
-				6F5492F025D07F230001C86F /* Sources */,
-				6F5492F125D07F230001C86F /* Frameworks */,
-				6F5492F225D07F230001C86F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6F5492F625D07F230001C86F /* PBXTargetDependency */,
-			);
-			name = SwiftUICodeTests;
-			productName = SwiftUIImageTests;
-			productReference = 6F5492F425D07F230001C86F /* SwiftUICodeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,10 +118,6 @@
 				TargetAttributes = {
 					6F5492E225D07F220001C86F = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					6F5492F325D07F230001C86F = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 6F5492E225D07F220001C86F;
 					};
 				};
 			};
@@ -170,7 +135,6 @@
 			projectRoot = "";
 			targets = (
 				6F5492E225D07F220001C86F /* SwiftUICode */,
-				6F5492F325D07F230001C86F /* SwiftUICodeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,13 +149,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F5492F225D07F230001C86F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -199,31 +156,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1AD12826D03A7E007704DB /* Buttons.swift in Sources */,
 				6F1AC80226AC9652007704DB /* StackContentView2.swift in Sources */,
 				6F1AC51D2676076F007704DB /* StackContentView.swift in Sources */,
 				6F5492E925D07F220001C86F /* ContentView.swift in Sources */,
 				6F1AC80926C13902007704DB /* CardView.swift in Sources */,
 				6F5492E725D07F220001C86F /* SwiftUICodeApp.swift in Sources */,
 				6F1AC92226C88089007704DB /* ScrollView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6F5492F025D07F230001C86F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6FA4C3D7273ABE6600398392 /* GridLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6F5492F625D07F230001C86F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6F5492E225D07F220001C86F /* SwiftUICode */;
-			targetProxy = 6F5492F525D07F230001C86F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6F54930625D07F230001C86F /* Debug */ = {
@@ -384,48 +328,6 @@
 			};
 			name = Release;
 		};
-		6F54930C25D07F230001C86F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftUICodeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phyonline.SwiftUICodeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUICode.app/SwiftUICode";
-			};
-			name = Debug;
-		};
-		6F54930D25D07F230001C86F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftUICodeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phyonline.SwiftUICodeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUICode.app/SwiftUICode";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -443,15 +345,6 @@
 			buildConfigurations = (
 				6F54930925D07F230001C86F /* Debug */,
 				6F54930A25D07F230001C86F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6F54930B25D07F230001C86F /* Build configuration list for PBXNativeTarget "SwiftUICodeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6F54930C25D07F230001C86F /* Debug */,
-				6F54930D25D07F230001C86F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
